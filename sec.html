@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENTAL COLOUR</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<style>
+    body{
+       margin-left: 10px;
+        background-image: url(https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg);
+        background-size:  cover; 
+    }
+    div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    #poo{
+        margin-left: auto;
+        height: 200px;
+        width: 200px;
+        background-color: rgb(238, 134, 36);
+        border: 10px dashed white;
+        border-radius: 50%;
+      
+    }
+    #poo1{
+        margin-left: auto;
+        height: 200px;
+        width: 200px;
+        background-color: rgb(218, 204, 190);
+        border: 10px dashed white;
+        border-radius: 50%;
+        
+    }
+    #poo2{
+        margin-left: auto;
+        height: 200px;
+        width: 200px;
+        background-color: rgb(31, 189, 34);
+        border: 10px dashed white;
+        border-radius: 50%;
+       
+    }
+    #poo3{
+        margin-left: auto;
+        height: 200px;
+        width: 200px;
+        background-color: rgb(109, 71, 211);
+        border: 10px dashed white;
+        border-radius: 50%;
+       
+    }
+    button {
+        border-color: blue;
+        background-color: cadetblue;
+        justify-items: center;
+        border-radius: 120%;
+        
+    }
+    
+</style>
+<body>
+    <div><h1> MAGIC GIF'S</h1>
+    <div id="poo">
+    <P>Hello</P></div>
+    <div id="poo1">
+    <P>Hi</P></div>
+    <div id="poo2">
+    <P>How are you?</P></div>
+    <div id="poo3">
+    <P>GOOD BYE</P></div>
+</div>
+    <button onclick="fun()"> DON'T TOUCH ME</button><br>
+    <button onclick="changeText()"> CHANGE TEXT  TOUCH ONCES</button><br>
+    <button onclick="addShadow()"> ADD SHADOW TOUCH ONCES AGAIN</button><br>
+    <button onclick="changeOpacity()"> CHANGE OPACITY AND AGAIN</button><br>
+    <button onclick="changeBorder()"> CHANGE BORDER CRY AND TOUCH AGAIN</button><br>
+    <button onclick="animated()">FOR ANIMATE SMILE AND TOUCH AGAIN</button><br>
+
+
+   
+    
+    <script>
+        function fun(){
+           $("div").css('background-color','yellow').fadeToggle(4000);
+           $("#poo2,#poo").css('background-color','red').fadeOut(3000);
+        }
+        function changeText() {
+            $("p").css({'color':'green','font-size':'20px'});
+        }
+        function addShadow() {
+            $("div").css('box-shadow','5px 5px 5px blue');
+        }
+        function changeOpacity() {
+            $("div").css('opacity','0.5');
+        }
+        function changeBorder() {
+            $("div").css({'border-color':'red',
+                        'border-width':'2px'
+
+            });
+        }
+        function animated() {
+            $("div").css({ heigth:"300px",
+            width:"500px" });
+            
+        }
+    </script>
+</body>
+</html>
